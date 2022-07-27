@@ -62,7 +62,15 @@ a{
     color: #96BB7C;
     font-family: roboto;
 }
-
+.nav .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav .left a{
+    font-size: 18px;
+    font-weight: bold;
+}
 .mid h1{
     color: white;
     font-size: 4em;
@@ -426,6 +434,32 @@ color: #737373;
     
 }
 .finally{
-    height: 100vh;
+    height: 60vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact input{
+    height:3.8em;
+    width: 45em;
+    border: 1px solid #737373;
+}
+.contact button{
+    height:3.8em;
+    width:10em;
+    background-color: #96BB7C;
+    border: none;
+    color: white;
+}
+.finally .practice{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.finally .practice p{
+    max-width:40em;
 }
