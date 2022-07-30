@@ -32,7 +32,7 @@ body{
     justify-content:space-between;
     align-items: center;
 }
-ul{
+.nav ul{
     display: flex;
 }
 li{
@@ -46,7 +46,14 @@ a{
     font-size: 1.5em;
     font-family: roboto;
 }
-
+input[type=checkbox]{
+    display: none;
+   }    
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
 .mid{
     width: 100%;
     height: 80vh;
@@ -63,7 +70,7 @@ a{
     font-family: roboto;
 }
 .nav .left{
-    display: flex;
+    display: fex;
     justify-content: center;
     align-items: center;
 }
@@ -462,4 +469,240 @@ color: #737373;
 }
 .finally .practice p{
     max-width:40em;
+}
+/* footer */
+
+.footer{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer ul li {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #737373;
+    letter-spacing: 0.2px;
+    font-family: roboto;
+} 
+.footer ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer ul li:first-child {
+    font-weight: 700;
+    color: #252B42;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+
+
+.footer ul li {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #737373;
+    letter-spacing: 0.2px;
+} 
+
+
+
+.get h2 {
+    font-weight: 700;
+    color: #252B42;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
+.footer ul {
+    margin: 20px;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+.p {
+    margin-left: 100px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #737373;
+    letter-spacing: 0.2px;
+    font-family: roboto;
+}
+
+.l {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #737373;
+    font-family: roboto;
+    letter-spacing: 0.2px;
+}
+
+.m {
+    margin-left: 60px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #737373;
+    font-family: roboto;
+    letter-spacing: 0.2px;
+}
+
+.m i,
+.l i,
+.p i {
+    margin-right: 5px;
+    color: #96BB7C;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+    background-color: #FAFAFA;
+
+}
+
+.bottom .i {
+    color: #96BB7C;
+    width:10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom h3 {
+    font-family: roboto;
+    color: #737373;
+}
+
+.bars {
+    display: none;
+} 
+
+@media only screen and (min-width: 992px) {
+    li{
+        list-style: none;
+        margin-left: 7em;
+        
+    }
+    .experts{
+        height: 140vh;
+        width: 100%;
+        display: flex; 
+        flex-direction:column;
+        justify-content:space-around;
+        margin-top:30px;
+     }
+     .liveshare{
+        height: 155vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .watch{
+        height: 140vh;
+        width: 100%;
+        display: flex; 
+        justify-content: space-around;
+        flex-direction: column;
+        margin-top:20vh;
+    }
+    .card{
+        width: 100%;
+        height: 140vh;
+        background-color:white;
+    }
+}
+@media only screen and (max-width: 768px) {
+    body{
+        overflow-x:hidden;
+    }
+    .togoa{
+        display: block;
+    }
+    .navtogo{
+        display: block;
+    }
+    .side ul li:nth-child(-n+5) {
+        display: none;
+    }
+    .main{
+        height:100vh;
+        width: 100%;
+         overflow-x:hidden;
+        background-image: url(./images/imghome.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+    .liveshare{
+        height: 500vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .experts{
+        height: 200vh;
+        width: 100%;
+        display: flex; 
+        flex-direction:column;
+        justify-content:space-around;
+        margin-top:30px;
+     }
+     .watch{
+        height: 350vh;
+        width: 100%;
+        display: flex; 
+        justify-content: space-around;
+        flex-direction: column;
+        margin-top:20vh;
+    }
+    .boxes{
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    .teachers{
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        justify-content:space-evenly;
+    }
+    .nav ul{
+        display: none;
+    }
+    .nav li:hover {
+        display: inline-block;
+        transition: 0.3s ease;
+       }
+    input[type=checkbox]:checked ~ .nav ul{
+        display: block;
+       }
+
+    .hamburger {
+        display: block;
+       }
+       
 }
